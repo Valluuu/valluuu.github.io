@@ -1,7 +1,15 @@
+.u-section-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("https://valluuu.github.io/images/video.mp4");
+  background-position: 50% 50%;
+}
 .audio-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1071px;
 }
 
 #myVideo {
@@ -14,24 +22,12 @@
   filter: blur(15px);
 } 
 
-.u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url("https://valluuu.github.io/images/video.mp4");
-  background-position: 50% 50%;
-}
-
-.u-section-1 .u-sheet-1 {
-  min-height: 1071px;
-}
-
 .u-section-1 .u-image-1 {
   width: 457px;
   min-height: 311px;
-  height: auto;
   background-image: url("https://assets.nicepagecdn.com/90c0a05f/4359737/images/tumblr_mryfknjzaW1qmwwa2o1_500.gif");
   background-position: 50% 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
   margin: 380px auto 60px;
   mix-blend-mode: screen;
 }
