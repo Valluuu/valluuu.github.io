@@ -23,12 +23,18 @@
   height: auto;
   background-image: url("https://assets.nicepagecdn.com/90c0a05f/4359737/images/tumblr_mryfknjzaW1qmwwa2o1_500.gif");
   background-position: 50% 50%;
-  margin: 192px auto 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 380px auto 60px;
   mix-blend-mode: screen;
 }
 
 .u-section-1 .u-container-layout-1 {
-  padding: 13px 15px 30px;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .u-section-1 .u-text-1 {
