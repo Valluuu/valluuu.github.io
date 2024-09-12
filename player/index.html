@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Music Player</title>
     <!-- Font Awesome Icons -->
@@ -41,78 +42,17 @@
       <audio id="audio" preload="metadata" src="alone.mp3"></audio>
       
       <div class="time-container">
-        <span id="current-time">01:29</span>
-        <span id="max-duration">03:09</span>
+        <span id="current-time">0:00</span>
+        <span id="max-duration">0:00</span>
       </div>
       <div id="playlist-container" class="hide">
         <button id="close-button">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <ul id="playlist-songs"><li class="playlistSong" onclick="setSong(0)">
-            <div class="playlist-image-container">
-                <img src="ripsquadd.jpg">
-            </div>
-            <div class="playlist-song-details">
-                <span id="playlist-song-name">
-                    Alone
-                </span>
-                <span id="playlist-song-artist-album">
-                    Ripsquadd
-                </span>
-            </div>
-        </li><li class="playlistSong" onclick="setSong(1)">
-            <div class="playlist-image-container">
-                <img src="ecco.png">
-            </div>
-            <div class="playlist-song-details">
-                <span id="playlist-song-name">
-                    Fruit Bleed Juice
-                </span>
-                <span id="playlist-song-artist-album">
-                    Ecco2k
-                </span>
-            </div>
-        </li><li class="playlistSong" onclick="setSong(2)">
-            <div class="playlist-image-container">
-                <img src="d925.jpg">
-            </div>
-            <div class="playlist-song-details">
-                <span id="playlist-song-name">
-                    D-925
-                </span>
-                <span id="playlist-song-artist-album">
-                    Bladee
-                </span>
-            </div>
-        </li><li class="playlistSong" onclick="setSong(3)">
-            <div class="playlist-image-container">
-                <img src="bladee.jpg">
-            </div>
-            <div class="playlist-song-details">
-                <span id="playlist-song-name">
-                    Spellbound
-                </span>
-                <span id="playlist-song-artist-album">
-                    Bladee
-                </span>
-            </div>
-        </li><li class="playlistSong" onclick="setSong(4)">
-            <div class="playlist-image-container">
-                <img src="decay.jpg">
-            </div>
-            <div class="playlist-song-details">
-                <span id="playlist-song-name">
-                    Decay
-                </span>
-                <span id="playlist-song-artist-album">
-                    Bladee
-                </span>
-            </div>
-        </li></ul>
+        <ul id="playlist-songs"></ul>
       </div>
     </div>
     <!-- Script -->
     <script src="script.js"></script>
-  
-
-</body></html>
+	</body>
+</html>
