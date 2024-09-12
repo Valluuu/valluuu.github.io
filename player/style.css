@@ -9,7 +9,7 @@ body {
 }
 .music-player {
   font-size: 16px;
-  color: #EEEEEE;
+  color: #ffffff;
   width: 80vw;
   max-width: 25em;
   background-color: #343434;
@@ -55,7 +55,7 @@ img {
 #pause {
   height: 2.5em;
   width: 2.5em;
-  font-size: 1.8em;;
+  font-size: 1.8em;
   color: #ffffff;
   border-radius: 50%;
 }
