@@ -25,7 +25,6 @@
 .u-section-1 .u-image-1 {
   width: 457px;
   min-height: 311px;
-  background-image: url("https://assets.nicepagecdn.com/90c0a05f/4359737/images/tumblr_mryfknjzaW1qmwwa2o1_500.gif");
   background-position: 50% 50%;
   display: flex;
   margin: 380px auto 60px;
@@ -34,7 +33,7 @@
 
 .u-section-1 .u-container-layout-1 {
   right: 0;
-  bottom: 0;
+  bottom: 200;
   min-width: 100%;
   min-height: 100%;
 }
@@ -80,7 +79,7 @@
   }
 
   .u-section-1 .u-btn-1 {
-    transform: translateX(84px) translateY(0px) scale(1.1) rotate(0deg);
+    transform: translateX(0px) translateY(0px) scale(1.1) rotate(0deg);
   }
 }
 
@@ -123,7 +122,7 @@
 .u-section-1 .u-btn-1.u-btn-1.u-btn-1:hover {
   border-radius: 12px !important;
   box-shadow: 2px 2px 8px 0px rgba(128,128,128,1) !important;
-  transform: translateX(84px) translateY(0px) scale(1.1) rotate(0deg) !important;
+  transform: translateX(0px) translateY(0px) scale(1.1) rotate(0deg) !important;
   text-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
 }
 
@@ -147,7 +146,7 @@
 }
 
 .u-section-1 .u-container-layout:hover .u-btn-1 {
-  transform: rotate(0deg) scale(1) translateX(84px) translateY(0px) !important;
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
 }
 
 .u-container-layout.hover .u-section-1 .u-btn-1 {
