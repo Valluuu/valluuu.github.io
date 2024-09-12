@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom Music Player</title>
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Roboto+Mono&amp;display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="music-player">
-      <button id="playlist">
-        
+      <button hidden id="playlist">
+        <i class="fa-solid fa-angle-down"></i>
       </button>
-      
       <div class="song-details">
-        <p id="song-name">Alone</p>
-        <p id="song-artist">Ripsquadd</p>
+        <p id="song-name">Make Me Move</p>
+        <p id="song-artist">Culture Code</p>
       </div>
       <div class="player-options">
         <button id="shuffle">
@@ -26,10 +35,10 @@
         <button id="prev">
           <i class="fa-solid fa-backward-step"></i>
         </button>
-        <button id="play" class="hide">
+        <button id="play">
           <i class="fa-solid fa-play"></i>
         </button>
-        <button id="pause" class="">
+        <button id="pause" class="hide">
           <i class="fa-solid fa-pause"></i>
         </button>
         <button id="next">
@@ -39,11 +48,12 @@
           <i class="fa-solid fa-repeat"></i>
         </button>
       </div>
-      <audio id="audio" preload="metadata" src="alone.mp3"></audio>
-      
-      <div class="time-container">
+      <audio id="audio" preload="metadata"></audio>
+	        <div class="time-container">
         <span id="current-time">0:00</span>
-        <span id="max-duration">0:00</span>
+      </div>
+	        <div hidden id="progress-bar">
+        <div id="current-progress"></div>
       </div>
       <div id="playlist-container" class="hide">
         <button id="close-button">
@@ -54,5 +64,5 @@
     </div>
     <!-- Script -->
     <script src="script.js"></script>
-	</body>
+  </body>
 </html>
